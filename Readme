@@ -1,1 +1,25 @@
  We will create WebScraper project having  Multithreading Concepts : 
+
+
+Key Components:
+
+URL Queue: Maintain a queue of URLs to be scraped.
+
+Thread Pool: Create a pool of worker threads to fetch and process URLs concurrently.
+
+Web Scraper Function: Develop a function that fetches HTML content from a given URL and extracts relevant information.
+
+Concurrency Control: Implement mechanisms like locks or semaphores to control access to shared resources (e.g., the URL queue) to avoid race conditions.
+
+Result Storage: Store the scraped data in a suitable data structure (e.g., a list or database).
+
+Logging: Add logging to track the progress and identify any issues during the scraping process.
+
+Example Implementation Steps:
+Create a list of URLs to scrape and add them to the URL queue.
+Implement a function to fetch HTML content from a given URL.
+Develop a function to extract relevant information from the HTML content.
+Create a thread pool with a specified number of worker threads.
+Implement a thread function that takes a URL from the queue, fetches and processes the content, and stores the result.
+Add synchronization mechanisms to ensure safe access to shared resources.
+Run the scraper and monitor the concurrent execution of threads.
